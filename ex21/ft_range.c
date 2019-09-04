@@ -1,21 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wpoudre <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/04 12:56:10 by wpoudre           #+#    #+#             */
-/*   Updated: 2019/09/04 19:26:28 by wpoudre          ###   ########.fr       */
+/*   Created: 2019/09/04 13:44:20 by wpoudre           #+#    #+#             */
+/*   Updated: 2019/09/04 14:01:36 by wpoudre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+int	*ft_range(int min, int max)
 {
-	while(*s1 && *s2 && *s1 == *s2)
+	int i;
+
+	i = 0;
+	int *range = (int*) malloc(max - min);
+	if (max > min)
 	{
-		s1++;
-		s2++;
+		while(i < max)
+		{
+			range[i] = min
+			min++;
+			i++;
+		}
+		return(range);
 	}
-	return(*s1 - *s2);
+	esle
+	{
+		range = (NULL);
+		return (range);
+	}
 }

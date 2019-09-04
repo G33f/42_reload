@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_print_alphabet.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wpoudre <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/04 12:56:10 by wpoudre           #+#    #+#             */
-/*   Updated: 2019/09/04 19:26:28 by wpoudre          ###   ########.fr       */
+/*   Created: 2019/09/02 20:35:27 by wpoudre           #+#    #+#             */
+/*   Updated: 2019/09/02 20:39:39 by wpoudre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strcmp(char *s1, char *s2)
+void	ft_putchar(char c);
+
+void	ft_print_alphabet(void)
 {
-	while(*s1 && *s2 && *s1 == *s2)
+	char c;
+
+	c = 'a';
+	while (c <= 'z')
 	{
-		s1++;
-		s2++;
+		ft_putchar(c);
+		c++;
 	}
-	return(*s1 - *s2);
 }

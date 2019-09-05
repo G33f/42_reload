@@ -15,8 +15,8 @@
 
 typedef struct		s_point
 {
-	struct	s_point	*x;
-	struct	s_point	*y;
-}					t_point
+	struct s_point *x;
+	struct s_point *y;
+}					t_point;
 
 #endif

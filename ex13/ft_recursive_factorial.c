@@ -23,4 +23,3 @@ int	ft_recursiv_factorial(int nb)
 	}
 	return (r);
 }
-

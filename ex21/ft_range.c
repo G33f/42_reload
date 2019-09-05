@@ -10,25 +10,29 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int	*ft_range(int min, int max)
+#include <stdlib.h>
+
+int		*ft_range(int min, int max)
 {
-	int i;
+	int	i;
 
 	i = 0;
-	int *range = (int*) malloc(max - min);
+	int *range;
+
+	range = (int*)malloc(max - min);
 	if (max > min)
 	{
-		while(i < max)
+		while (min <= max)
 		{
-			range[i] = min
+			range[i] = min;
 			min++;
 			i++;
 		}
-		return(range);
+		return (range);
 	}
-	esle
+	else
 	{
-		range = (NULL);
+		range = NULL;
 		return (range);
 	}
 }

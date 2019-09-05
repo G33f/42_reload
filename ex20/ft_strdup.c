@@ -5,24 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: wpoudre <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/04 13:36:03 by wpoudre           #+#    #+#             */
-/*   Updated: 2019/09/04 13:42:04 by wpoudre          ###   ########.fr       */
+/*   Created: 2019/09/05 21:33:30 by wpoudre           #+#    #+#             */
+/*   Updated: 2019/09/05 21:33:34 by wpoudre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-cdhar	ft_strddup(char *src)
+#include <stdlib.h>
+
+char		*ft_strdup(char *src)
 {
-	int i;
+	int		i;
 
 	i = 0;
-	while(src[i])
+	while (src[i])
 	{
 		i++;
 	}
-	char *c = (char*) malloc(i + 1);
-	while(i > 0) 
+	char	*c;
+
+	c = (char*)malloc(i + 1);
+	while (i > 0)
 	{
 		c[i] = src[i];
 	}
-	return(c);
+	return (c);
 }

@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int main(int ac, char **av)
+int		main(int ac, char **av)
 {
 	int i;
 
 	i = 1;
 	while (i < ac)
 	{
-		while(*av[i])
+		while (*av[i])
 		{
 			ft_putchar(av[i]);
 			av[i]++;
@@ -25,5 +25,5 @@ int main(int ac, char **av)
 		ft_purtchar("\n");
 		i++;
 	}
-	return(0);
+	return (0);
 }

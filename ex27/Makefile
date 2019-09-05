@@ -6,26 +6,20 @@
 #    By: wpoudre <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/04 18:18:50 by wpoudre           #+#    #+#              #
-#    Updated: 2019/09/04 21:05:14 by wpoudre          ###   ########.fr        #
+#    Updated: 2019/09/04 19:05:04 by wpoudre          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+SRC = ft_display_file.c
 
-SRC = ft_putchar.c ft_putstr.c ft_strcmp.c ft_strlen.c ft_swap.c
+FLAGS = -Wall -Wextra -Werror
 
-OBJ = ft_putchar.o ft_putstr.o ft_strcmp.o ft_strlen.o ft_swap.o
-
-FLAGS = - Wall -Wextra -Werror
-
-INCLUDES = includes/
+NAME = ft_display_file
 
 all: $(NAME)
 
 $(NAME):
-	gcc $(FLAGS) -c $(SRC) -I $(INCLUDES)
-	ar rc $(NAME) $(OBJ)
-	ranlib $(NAME)
+	gcc $(FLAGS) $(SRC) -o $(NAME)
 
 clean:
 	/bin/rm -f *.o

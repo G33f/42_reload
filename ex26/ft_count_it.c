@@ -13,13 +13,15 @@
 int	ft_count_it(char **tab, int (*f)(char*))
 {
 	int	i;
+	int count;
 
 	i = 0;
-	while (*tab)
+	count = 0;
+	while (tab[i])
 	{
-		if (f(tab) == 1)
-			i++;
-		tab++;
+		if (f(tab[i]) == 1)
+			count++;
+		i++;
 	}
-	return (i);
+	return (count);
 }

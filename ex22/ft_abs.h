@@ -6,8 +6,13 @@
 /*   By: wpoudre <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/03 20:45:42 by wpoudre           #+#    #+#             */
-/*   Updated: 2019/09/03 21:03:19 by wpoudre          ###   ########.fr       */
+/*   Updated: 2019/09/06 16:57:34 by wpoudre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#define ABS(value) ((value<0)?(-value):(value))
+#ifndef FT_ABS_H
+# define FT_ABS_H
+
+# define ABS(value) ((value<0)?(-value):(value))
+
+#endif

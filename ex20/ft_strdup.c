@@ -6,23 +6,22 @@
 /*   By: wpoudre <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 21:33:30 by wpoudre           #+#    #+#             */
-/*   Updated: 2019/09/05 21:33:34 by wpoudre          ###   ########.fr       */
+/*   Updated: 2019/09/06 16:55:29 by wpoudre          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-char		*ft_strdup(char *src)
+char	*ft_strdup(char *src)
 {
 	int		i;
+	char	*c;
 
 	i = 0;
 	while (src[i])
 	{
 		i++;
 	}
-	char	*c;
-
 	c = (char*)malloc(i + 1);
 	while (i > 0)
 	{

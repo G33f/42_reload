@@ -15,8 +15,8 @@
 
 typedef struct		s_point
 {
-	int 			x;
-	int 			y;
+	int x;
+	int y;
 }					t_point;
 
 void				set_poitn(t_point *point);
